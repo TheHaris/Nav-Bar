@@ -1,0 +1,149 @@
+body
+{
+ font-family: 'Montserrat', sans-serif;
+ font-weight: bold;
+ margin: 0px;
+ padding:0px;
+}
+
+ nav > ul
+ {
+  margin: 0px;
+  padding: 0px;
+ }
+
+ nav > ul > li
+ {
+  float: left;
+  position: relative;
+ }
+
+ nav li
+ {
+  list-style-type: none;
+ }
+
+.submenu
+{
+ display: none;
+}
+
+nav li:hover .submenu
+{
+ display: inline-block;
+ position: absolute;
+ top: 100%;
+ left: 0px;
+ padding: 0px;
+ z-index: 1;
+}
+
+nav
+{
+ position: fixed;
+ width: 100%;
+ background-color: grey;
+}
+
+nav > ul::after
+{
+ content: "";
+ display: block;
+ clear: both;
+}
+
+nav a
+{
+ display: inline-block;
+ text-decoration: none;
+ font-weight: 500;
+}
+
+nav > ul > li > a
+{
+ padding: 20px 30px;
+ color: white;
+}
+
+.submenu li
+{
+ border-bottom: 1px solid #ccc
+}
+
+.submenu li a
+{
+ padding: 15px 30px;
+ font-size: 13px;
+ color: black;
+ width: auto;
+}
+
+ .Home:hover
+ {
+  background-color: green;
+  border-top:5px solid black;
+ }
+
+ .Html5:hover
+ {
+  background-color: brown;
+  border-top:5px solid black;
+ }
+
+ .Css3:hover
+ {
+  background-color: yellow;
+  border-top:5px solid black;
+ }
+
+ .Javascript:hover
+ {
+  background-color: blue;
+  border-top:5px solid black;
+ }
+
+ nav > ul >li:hover a
+ {
+  padding: 15px 30px 20px 30px;
+  color: black;
+ }
+
+.Home .submenu
+ {
+  background-color: orange;
+ }
+
+.Html5 .submenu
+ {
+  background-color: red;
+ }
+
+.Css3 .submenu
+ {
+  background-color: orange;
+ }
+
+.Javascript .submenu
+ {
+  background-color: red;
+ }
+
+.Home .submenu li:hover
+ {
+  background-color: grey;
+ }
+
+.Html5 .submenu li:hover
+ {
+  background-color: grey;
+ }
+
+.Css3 .submenu li:hover
+ {
+  background-color: grey;
+ }
+
+.Javascript .submenu li:hover
+ {
+  background-color: grey;
+ }
